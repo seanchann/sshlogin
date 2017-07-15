@@ -11,3 +11,7 @@
 ### Changed
 - modify readme
 - add git repo and author information for vscode market.
+
+# [0.0.3] - 2017-07-15
+### Changed
+- add logo

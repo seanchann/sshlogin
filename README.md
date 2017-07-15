@@ -41,17 +41,6 @@ example:
 
 - Because can not get to the terminal output, so the password landing mode does not support
 
-## Release Notes
-
-
-### 0.0.1
-
-Released for the first time
-
-### 0.0.2
-
-- modify doc
-
 ## Change log 
 You can checkout all our changes in our [change log](https://github.com/seanchann/sshlogin/blob/master/CHANGELOG.md).
 
