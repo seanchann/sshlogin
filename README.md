@@ -48,6 +48,10 @@ example:
 
 Released for the first time
 
+### 0.0.2
+
+- modify doc
+
 ## Change log 
 You can checkout all our changes in our [change log](https://github.com/seanchann/sshlogin/blob/master/CHANGELOG.md).
 
