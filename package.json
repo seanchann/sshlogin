@@ -2,7 +2,7 @@
     "name": "sshlogin",
     "displayName": "sshlogin",
     "description": "auto login by ssh",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "seanchann",
     "engines": {
         "vscode": "^1.14.0"
@@ -29,6 +29,8 @@
     "activationEvents": [
         "onCommand:extension.sshlogin"
     ],
+    "homepage": "https://github.com/seanchann/sshlogin",
+    "icon": "images/logo.jpg",
     "main": "./out/src/extension",
     "contributes": {
         "commands": [{
