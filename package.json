@@ -1,0 +1,97 @@
+{
+    "name": "sshlogin",
+    "displayName": "sshlogin",
+    "description": "auto login by ssh",
+    "version": "0.0.1",
+    "publisher": "seanchann",
+    "engines": {
+        "vscode": "^1.14.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "author": {
+        "email": "seanchann.zhou@gmail.com",
+        "name": "seanchann zhou"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/vscode-icons/vscode-icons"
+    },
+    "bugs": {
+        "url": "https://github.com/vscode-icons/vscode-icons/issues",
+        "email": "seanchann.zhou@gmail.com"
+    },
+    "keywords": [
+        "ssh",
+        "login"
+    ],
+    "activationEvents": [
+        "onCommand:extension.sshlogin"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "commands": [{
+            "command": "extension.sshlogin",
+            "title": "sshlogin"
+        }],
+
+        "configuration": {
+            "type": "object",
+            "title": "SSHLogin",
+            "properties": {
+                "sshlogin.connection": {
+                    "type": "array",
+                    "description": "The connection information required to log in.",
+                    "properties": {
+                        "items": {
+                            "type": "object",
+                            "description": "connection information",
+                            "properties": {
+                                "name": {
+                                    "type": "string",
+                                    "default": "con1",
+                                    "description": "the name of  connection"
+                                },
+                                "host": {
+                                    "type": "string",
+                                    "default": "localhost",
+                                    "description": "host name for this connection"
+                                },
+                                "port": {
+                                    "type": "int",
+                                    "default": 22,
+                                    "description": "connection port"
+                                },
+                                "pubkeyfile": {
+                                    "type": "string",
+                                    "default": "/.ssh/id_rsa.pub",
+                                    "description": "require public key file for ssh login user"
+                                }
+                            }
+                        }
+                    },
+                    "default": [{
+                        "name": "local",
+                        "host": "localhost",
+                        "port": 22,
+                        "pubkeyfile": "~/.ssh/id_rsa.pub"
+                    }]
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "tsc -p ./",
+        "compile": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "mocha": "^2.3.3",
+        "@types/node": "^6.0.40",
+        "@types/mocha": "^2.2.32"
+    }
+}
