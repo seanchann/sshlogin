@@ -16,10 +16,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/vscode-icons/vscode-icons"
+        "url": "https://github.com/seanchann/sshlogin"
     },
     "bugs": {
-        "url": "https://github.com/vscode-icons/vscode-icons/issues",
+        "url": "https://github.com/seanchann/sshlogin/issues",
         "email": "seanchann.zhou@gmail.com"
     },
     "keywords": [

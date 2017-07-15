@@ -1,3 +1,9 @@
+
+[![Version](https://vsmarketplacebadge.apphb.com/version/seanchann.sshlogin.svg)](https://marketplace.visualstudio.com/items?itemName=seanchann.sshlogin)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs/seanchann.sshlogin.svg)](https://marketplace.visualstudio.com/items?itemName=seanchann.sshlogin)
+[![Ratings](https://vsmarketplacebadge.apphb.com/rating/seanchann.sshlogin.svg)](https://marketplace.visualstudio.com/items?itemName=seanchann.sshlogin)
+
+
 A package that implements auto login with ssh to remote server feature for VSCode.
 
 
@@ -38,12 +44,12 @@ example:
 ## Release Notes
 
 
-### 1.0.0
+### 0.0.1
 
 Released for the first time
 
 ## Change log 
-You can checkout all our changes in our [change log](https://github.com/vscode-icons/vscode-icons/blob/master/CHANGELOG.md).
+You can checkout all our changes in our [change log](https://github.com/seanchann/sshlogin/blob/master/CHANGELOG.md).
 
 ## Versioning
 sshlogin follows [Semantic Versioning 2.0.0](http://semver.org/).
