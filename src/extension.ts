@@ -16,21 +16,11 @@ export function activate(context: vscode.ExtensionContext) {
     // Now provide the implementation of the command with  registerCommand
     // The commandId parameter must match the command field in package.json
     let disposable = vscode.commands.registerCommand('extension.sshlogin', () => {
-        // The code you place here will be executed every time your command is executed
-        let editor = vscode.window.activeTextEditor;
-        if (!editor) {
-            return;
-        }
-        let selection = editor.selection;
-        let text = editor.document.getText(selection);
+
         let config = vscode.workspace.getConfiguration('sshlogin');
 
         const connections = config.get<config[]>('connection');
 
-        // for (var index = 0; index < connections.length; index++) {
-        //     var element = connections[index];
-        //     vscode.window.showInformationMessage("test: " + element);
-        // }
         console.log('exec connection ' + connections.length);
         let choise: string[] = [];
         let choiseMap: { [key: string]: config } = {};
@@ -42,6 +32,7 @@ export function activate(context: vscode.ExtensionContext) {
 
         const chosen = vscode.window.showQuickPick(choise);
         if (!chosen) {
+            vscode.window.showInformationMessage("You need to specify a connection configuration");
             return null;
         }
         chosen.then(val => {
