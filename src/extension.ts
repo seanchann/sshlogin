@@ -39,7 +39,7 @@ export function activate(context: vscode.ExtensionContext) {
             if (choiseMap[val]) {
                 const terminal = vscode.window.createTerminal();
                 terminal.show();
-                let command = "ssh " + "-i " + choiseMap[val].pubkeyfile + " " + choiseMap[val].user + "@" + choiseMap[val].host + " -p " + choiseMap[val].port;
+                let command = "ssh " + "-i " + choiseMap[val].keyfile + " " + choiseMap[val].user + "@" + choiseMap[val].host + " -p " + choiseMap[val].port;
 
                 terminal.sendText(command);
             }

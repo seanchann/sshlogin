@@ -2,7 +2,7 @@
     "name": "sshlogin",
     "displayName": "sshlogin",
     "description": "auto login by ssh",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "seanchann",
     "engines": {
         "vscode": "^1.14.0"
@@ -53,7 +53,12 @@
                                 "name": {
                                     "type": "string",
                                     "default": "con1",
-                                    "description": "the name of  connection"
+                                    "description": "the name of connection"
+                                },
+                                "user": {
+                                    "type": "string",
+                                    "default": "root",
+                                    "description": "username"
                                 },
                                 "host": {
                                     "type": "string",
@@ -65,19 +70,20 @@
                                     "default": 22,
                                     "description": "connection port"
                                 },
-                                "pubkeyfile": {
+                                "keyfile": {
                                     "type": "string",
-                                    "default": "/.ssh/id_rsa.pub",
-                                    "description": "require public key file for ssh login user"
+                                    "default": "/.ssh/id_rsa",
+                                    "description": "require private key file for ssh login user"
                                 }
                             }
                         }
                     },
                     "default": [{
                         "name": "local",
+                        "user": "root",
                         "host": "localhost",
                         "port": 22,
-                        "pubkeyfile": "~/.ssh/id_rsa.pub"
+                        "keyfile": "~/.ssh/id_rsa"
                     }]
                 }
             }

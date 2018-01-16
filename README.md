@@ -19,7 +19,7 @@ You need to configure a `sshlogin.connection` that is required to connect to a r
 - user: the login name.
 - host: the hostname of remote server.
 - port: the port of ssh service.
-- pubkeyfile: what public key use for ssh connection.
+- keyfile: what private key use for ssh connection.
 
 example:
 
@@ -29,7 +29,7 @@ example:
     "user": "seanchann",
     "host": "test1",
     "port": 22,
-    "pubkeyfile": "~/.ssh/id_rsa.pub"
+    "keyfile": "~/.ssh/id_rsa.pub"
 }]
 ```
 
