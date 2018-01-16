@@ -2,7 +2,7 @@
     "name": "sshlogin",
     "displayName": "sshlogin",
     "description": "auto login by ssh",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "publisher": "seanchann",
     "engines": {
         "vscode": "^1.14.0"

@@ -29,7 +29,7 @@ example:
     "user": "seanchann",
     "host": "test1",
     "port": 22,
-    "keyfile": "~/.ssh/id_rsa.pub"
+    "keyfile": "~/.ssh/id_rsa"
 }]
 ```
 

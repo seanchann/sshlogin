@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [0.0.5] - 2018-01-18
+
+### Fixed
+
+- bug(#1). use the key file for ssh connection
+
 ## [0.0.4] - 2017-07-22
 
 ### Fixed
