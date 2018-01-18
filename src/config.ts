@@ -5,5 +5,5 @@ export default interface connection {
   user: string,
   host: string,
   port: number,
-  pubkeyfile: string
+  keyfile: string
 };
